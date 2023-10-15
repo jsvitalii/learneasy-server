@@ -16,7 +16,7 @@ const client = new MongoClient(uri, {
 });
 
 app.get('/', (req, res) => {
-  res.send('Edumodo Server!');
+  res.send('LearnEasy Server!');
 });
 
 client.connect((err) => {
