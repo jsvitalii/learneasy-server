@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
   res.send('LearnEasy Server!');
 });
 
-client.connect((err) => {
+client.connect(() => {
   const courseCollection = client.db('learneasy').collection('courses');
   const cartOrderCollection = client.db('learneasy').collection('cartOrders');
   const orderCollection = client.db('learneasy').collection('orders');
